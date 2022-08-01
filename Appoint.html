@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Book your Appointment-AMR COLLEGE</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="AMR_LOGObg.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor2/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts2/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts2/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor2/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor2/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor2/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor2/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor2/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css2/util.css">
+	<link rel="stylesheet" type="text/css" href="css2/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<!-- <form class="contact100-form validate-form"> -->
+				<span class="contact100-form-title">
+					<h1>Book an Appointment</h1>
+				</span>
+
+				<form  class="contact100-form validate-form" id="submit-form" action= "">
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<label class="label-input100" for="Name">Full name</label>
+					<input id="name" class="input100" type="text" name="Name" placeholder="Enter your name...">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Contact Number is required">
+					<label class="label-input100" for="Contact No:"> Your Contact Number</label>
+					<input type="text" name="Contact No:" title="Contact No:" pattern="[1-9]{1}[0-9]{9}" placeholder="Enter your contact number...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<label class="label-input100" for="email">Email Address</label>
+					<input id="email" class="input100" type="text" name="Email" placeholder="Enter your email...">
+					<span class="focus-input100"></span>
+				</div>
+
+				<!-- <div class="wrap-input100"> -->
+					<!-- <div class="label-input100">Which cource are you looking for?</div> -->
+					<div class="wrap-input100 validate-input" data-validate="Cource is required">
+						<label class="label-input100" for="Cource">Which cource are you looking for?</label>
+						<input id="name" class="input100" type="text" name="Cource" placeholder="Enter the cource name...">
+						<span class="focus-input100"></span>
+					
+					<!-- </div> -->
+	
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Time is required">
+					<label class="label-input100" for="Time of visit"> Your Time of visit</label>
+					<input type="datetime-local" name=" Time of visit" title="Contact No:" pattern="[1-9]{1}[0-9]{9}" placeholder="Enter your Time of visit...">
+					<span class="focus-input100"></span>
+				</div>
+
+				<!-- <div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<label class="label-input100" for="message">Message</label>
+					<textarea id="message" class="input100" name="message" placeholder="Type your message here..."></textarea>
+					<span class="focus-input100"></span>
+				</div> -->
+
+				<div class="container-contact100-form-btn">
+					<input type="submit" value="Submit" style="background-color: rgba(63, 63, 163, 0.493);">
+					<!-- <button class="contact100-form-btn">
+						
+						Submit -->
+					<!-- </button> -->
+				</div>
+
+				<!-- <div class="contact100-form-social flex-c-m">
+					<a href="#" class="contact100-form-social-item flex-c-m bg1 m-r-5">
+						<i class="fa fa-facebook-f" aria-hidden="true"></i>
+					</a>
+
+					<a href="#" class="contact100-form-social-item flex-c-m bg2 m-r-5">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+
+					<a href="#" class="contact100-form-social-item flex-c-m bg3">
+						<i class="fa fa-youtube-play" aria-hidden="true"></i>
+					</a>
+				</div> -->
+				</form>
+
+			<div class="contact100-more flex-col-c-m" style="background-image: url('images2/bg.jpg');">
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor2/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor2/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor2/bootstrap/js/popper.js"></script>
+	<script src="vendor2/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor2/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+		$(".js-select2").each(function(){
+			$(this).on('select2:open', function (e){
+				$(this).parent().next().addClass('eff-focus-selection');
+			});
+		});
+		$(".js-select2").each(function(){
+			$(this).on('select2:close', function (e){
+				$(this).parent().next().removeClass('eff-focus-selection');
+			});
+		});
+
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor2/daterangepicker/moment.min.js"></script>
+	<script src="vendor2/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor2/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js2/main.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-636NM3XXWB"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-636NM3XXWB');
+	</script>
+	<script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycby2vj3k9fmV31Q-U5kr7Ynv5uvk1zMe9cFb9bdhLwvODUYe3n-haFOmaC0vkONELXU_Mg/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Appointment booked successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+			
+</body>
+</html>
