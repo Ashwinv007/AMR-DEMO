@@ -358,7 +358,7 @@ li > a:only-child:after {
         text-decoration: none;
         border: none;
         float: right;
-        margin-right: 16em;
+        margin-right: 0em;
         background-color: #fff;
         color: #1b1d1d;
         text-transform: capitalize;
