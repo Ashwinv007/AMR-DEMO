@@ -82,10 +82,10 @@ header {
 
 }
 #mulco{
-    font-size: 5em;
+    font-size: 2em;
     font-family: serif;
     color: transparent;
-    text-align: center;
+    text-align: left;
     animation: effect 2s linear infinite;
 }
 
@@ -103,30 +103,34 @@ header {
     }
 }
 #redbox {
-    background-color: #ffb2ad ;
+    background-color: #FFFFF0 ;
     padding: 10px ;
-    border: 1px solid red ;
+    border: 1px solid black ;
   }
 #greenbox {
-    background-color: #cfc ;
+    background-color: #FFFFF0 ;
     padding: 10px ;
-    border: 1px solid green ;
+    border: 1px solid black ;
+    border-radius: 25px;
   }
 
   #bluebox {
-    background-color: #96ccf5 ;
+    background-color: #FFFFF0 ;
     padding: 10px ;
-    border: 1px solid blue ;
+    border: 1px solid black ;
+    border-radius: 25px;
   }
   #purplebox {
-    background-color: #edc7d8 ;
+    background-color: #FFFFF0 ;
     padding: 10px ;
-    border: 1px solid purple ;
+    border: 1px solid black ;
+    border-radius: 25px;
   }
   #orangebox {
-    background-color: #ffe28d ;
+    background-color: #FFFFF0 ;
     padding: 10px ;
-    border: 1px solid orange ;
+    border: 1px solid black ;
+    border-radius: 25px;
   }
 #AEI{
     margin-left: 4%;
